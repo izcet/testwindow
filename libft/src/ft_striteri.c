@@ -1,18 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   testmaps.h                                         :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: irhett <irhett@student.42.us.org>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/05/29 11:36:46 by irhett            #+#    #+#             */
-/*   Updated: 2017/05/29 11:36:46 by irhett           ###   ########.fr       */
+/*   Created: 2016/11/07 09:57:41 by irhett            #+#    #+#             */
+/*   Updated: 2017/02/15 17:15:07 by irhett           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef TESTMAPS_H
-# define TESTMAPS_H
+#include "libft.h"
 
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
+{
+	unsigned int	i;
 
-
-#endif
+	i = 0;
+	if (s && f)
+	{
+		while (s[i] != '\0')
+		{
+			f(i, s + i);
+			i++;
+		}
+	}
+}
