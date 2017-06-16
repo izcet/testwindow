@@ -6,11 +6,11 @@
 #    By: irhett <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/12 20:58:56 by irhett            #+#    #+#              #
-#    Updated: 2017/05/28 16:24:48 by irhett           ###   ########.fr        #
+#    Updated: 2017/05/29 11:41:26 by irhett           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		=	fdf
+NAME		=	testwindo
 MLX_DIR		=	mlx
 MLX			=	$(MLX_DIR)/libmlx.a
 
